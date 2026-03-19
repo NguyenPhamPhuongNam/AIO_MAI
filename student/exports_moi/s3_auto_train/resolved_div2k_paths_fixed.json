@@ -1,0 +1,6 @@
+{
+  "train_hr": "/home/tinhanh/MobileAI/data/DIV2K/DIV2K_train_HR/DIV2K_train_HR",
+  "train_lr": "/home/tinhanh/MobileAI/data/DIV2K/DIV2K_train_LR_bicubic_X3/DIV2K_train_LR_bicubic/X3",
+  "valid_hr": "/home/tinhanh/MobileAI/data/DIV2K/DIV2K_valid_HR/DIV2K_valid_HR",
+  "valid_lr": "/home/tinhanh/MobileAI/data/DIV2K/DIV2K_valid_LR_bicubic_X3/DIV2K_valid_LR_bicubic/X3"
+}
