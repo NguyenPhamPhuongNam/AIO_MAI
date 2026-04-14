@@ -73,7 +73,7 @@ Fidelity-oriented refinement using:
 |---|---:|---:|---|
 | Ours (Stage 2) FP32 | 30.28 | 0.863 | Best floating-point student |
 | Ours (Deploy) INT8 | 30.13 | 0.858 | Fixed-shape deployable TFLite artifact |
-| AIO MAI Submission | 29.79 | 0.8634 | Final MAI 2026 test-set result, score = 1.8 |
+| AIO MAI Submission | 29.79 | 0.8634 | Final MAI 2026 test-set result, score = 1.8, top 5 |
 
 ### Additional Ablation Highlights
 
