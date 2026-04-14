@@ -6,6 +6,21 @@ Official repository for our MAI 2026 Quantized 4K Image Super-Resolution Challen
 
 ---
 
+## Qualitative Results
+
+<p align="center">
+  <img src="assets/visual_comparison_12panels.png" alt="Qualitative comparison of LR, HR, and AIO_MAI results" width="100%">
+</p>
+
+<p align="center">
+  <em>
+    Qualitative comparison of ×3 quantized image super-resolution on representative DIV2K validation images.
+    From left to right: Full LR image, zoomed LR patch, HR ground truth, and our AIO_MAI result.
+  </em>
+</p>
+
+---
+
 ## Overview
 
 This repository contains our full training, export, and evaluation pipeline for a compact **×3 single-image super-resolution** model designed for **mobile INT8 deployment**.
@@ -80,6 +95,8 @@ AIO_MAI/
 │   ├── model.py
 │   ├── README.md
 │   └── ...
+├── assets/
+│   └── visual_comparison_12panels.png
 ├── README.md
 ├── mambairv2_lightSR_x3.pth
 └── requirements.txt
@@ -268,8 +285,6 @@ python train.py \
 
 ## Export
 
-To export the deployable model, run:
-
 ```bash
 python main.py \
   --deploy_ckpt ./runs_mobileone_32_8/balanced/ckpt_best_s3_qat_deploy.pt \
@@ -287,8 +302,6 @@ python main.py \
 
 ## Evaluation
 
-To evaluate the exported TFLite models, run:
-
 ```bash
 python eval_div2k_full_compare.py \
   --deploy_ckpt ./runs_mobileone_32_8/balanced/ckpt_best_s3_qat_deploy.pt \
@@ -304,23 +317,7 @@ python eval_div2k_full_compare.py \
 
 ---
 
-## Notes
-
-- Replace the dataset location only if your directory layout differs from the one shown above
-- The recommended workflow is:
-  1. Train Stage 1 + Stage 2
-  2. Train Stage 3
-  3. Export deployable model
-  4. Evaluate exported models
-- Stage 3 starts from the best Stage 2 checkpoint
-- The repository is designed for **×3 super-resolution**
-- The final deployment target is **INT8 TFLite**
-
----
-
 ## Citation
-
-If you use this repository, please cite:
 
 ```bibtex
 @misc{nguyen2026efficientint8sr,
@@ -329,16 +326,3 @@ If you use this repository, please cite:
   year={2026}
 }
 ```
-
----
-
-## Acknowledgements
-
-This project builds on ideas and components related to:
-
-- DIV2K
-- MambaIR / MambaIRv2
-- MobileOne
-- Quantization-aware training for image restoration and super-resolution
-
-We thank the authors of these works and the MAI challenge organizers.
