@@ -9,11 +9,19 @@ Deployment-Aware Quantization and Teacher-Guided Training
     <strong>Official repository for our MAI 2026 Quantized 4K Image Super-Resolution Challenge submission</strong>
   </p>
 
+  <table align="center">
+    <tr>
+      <td align="center"><a href="https://github.com/NguyenPhamPhuongNam/AIO_MAI"><strong>Pham Phuong Nam Nguyen</strong></a><sup>1,3</sup></td>
+      <td align="center"><a href="https://github.com/NguyenPhamPhuongNam/AIO_MAI"><strong>Nam Tien Le</strong></a><sup>2,3</sup></td>
+      <td align="center"><a href="https://github.com/NguyenPhamPhuongNam/AIO_MAI"><strong>Thi Kim Trang Vo</strong></a><sup>1,3</sup></td>
+      <td align="center"><a href="https://github.com/NguyenPhamPhuongNam/AIO_MAI"><strong>Nhu Tinh Anh Nguyen</strong></a><sup>2,3</sup></td>
+    </tr>
+  </table>
+
   <p>
-    <strong>Pham Phuong Nam Nguyen</strong>&nbsp;&nbsp;
-    <strong>Nam Tien Le</strong>&nbsp;&nbsp;
-    <strong>Thi Kim Trang Vo</strong>&nbsp;&nbsp;
-    <strong>Nhu Tinh Anh Nguyen</strong>
+    <sup>1</sup>University of Information Technology<br>
+    <sup>2</sup>Ho Chi Minh City University of Technology<br>
+    <sup>3</sup>Vietnam National University, Ho Chi Minh City
   </p>
 
   <p>
